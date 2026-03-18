@@ -378,11 +378,13 @@ export default function Home() {
 
               <FadeInOnScroll delay={600}>
                 <p className="mt-6 font-serif text-sm font-light leading-[1.8] tracking-wide text-white/60 md:text-base">
-                  고흥 나로우주센터가 보이는
+                  고흥 나로우주센터가 보이는 시원한 시야는,
                   <br />
-                  시원한 시야는, 고인의 영원한 비상(飛上)을 기원하는
+                  고인의 영원한 비상(飛上)을 기원하는
                   <br />
-                  성해원(星海園)만의 독보적인 산분 포인트입니다.
+                  성해원(星海園)만의
+                  <br className="md:hidden" />
+                  {" "}독보적인 산분 포인트입니다.
                 </p>
               </FadeInOnScroll>
             </div>
