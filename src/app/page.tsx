@@ -520,7 +520,9 @@ export default function Home() {
                 <br />
                 꼭 함께 승선하지 않아도 되는 분들은
                 <br />
-                성해원(星海園) 추모대기실에서 편안히 대기하실 수 있습니다.
+                성해원(星海園) 추모대기실에서
+                <br className="md:hidden" />
+                {" "}편안히 대기하실 수 있습니다.
               </p>
             </div>
           </FadeInOnScroll>
