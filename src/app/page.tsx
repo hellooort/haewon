@@ -12,7 +12,7 @@ function FAQItem({ q, a }: { q: string; a: string }) {
         onClick={() => setOpen(!open)}
         className="flex w-full items-center justify-between py-6 text-left"
       >
-        <span className="pr-4 font-sans text-base font-medium tracking-wide text-white/90 md:text-lg">
+        <span className="pr-4 font-sans text-lg font-medium tracking-wide text-white/90 md:text-xl">
           {q}
         </span>
         <span
@@ -30,7 +30,7 @@ function FAQItem({ q, a }: { q: string; a: string }) {
           open ? "max-h-96 pb-6" : "max-h-0"
         }`}
       >
-        <p className="font-sans text-base leading-[1.7] tracking-wide text-white/50">{a}</p>
+        <p className="font-sans text-lg leading-[1.7] tracking-wide text-white/50">{a}</p>
       </div>
     </div>
   );
@@ -96,13 +96,13 @@ export default function Home() {
               : "opacity-0 -translate-y-8"
           }`}
         >
-          <p className="font-serif text-4xl tracking-[0.2em] text-soft-gold md:text-5xl">
+          <p className="font-serif text-5xl tracking-[0.2em] text-soft-gold md:text-6xl">
             성해원
           </p>
-          <p className="mt-2 font-serif text-lg tracking-[0.15em] text-soft-gold/60 md:text-xl">
+          <p className="mt-2 font-serif text-xl tracking-[0.15em] text-soft-gold/60 md:text-2xl">
             星海園
           </p>
-          <p className="mt-3 font-sans text-xs tracking-[0.3em] text-white/40">
+          <p className="mt-3 font-sans text-sm tracking-[0.3em] text-white/40">
             별을 품은 바다정원의 안식처
           </p>
         </div>
@@ -117,13 +117,13 @@ export default function Home() {
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 md:px-12 md:py-5">
           <a href="#" className="flex items-center gap-3">
             <Image src="/images/logo.png" alt="성해원(星海園)" width={44} height={44} className="md:h-12 md:w-12" />
-            <span className="font-serif text-xl tracking-widest text-soft-gold drop-shadow-lg md:text-2xl">
+            <span className="font-serif text-2xl tracking-widest text-soft-gold drop-shadow-lg md:text-3xl">
               성해원
             </span>
           </a>
           <a
             href="tel:01025197592"
-            className="rounded-full border border-soft-gold/30 bg-soft-gold/10 px-6 py-2.5 font-sans text-sm tracking-wider text-soft-gold backdrop-blur-md transition-all hover:bg-soft-gold/20 md:px-7 md:py-3 md:text-base"
+            className="rounded-full border border-soft-gold/30 bg-soft-gold/10 px-6 py-2.5 font-sans text-lg tracking-wider text-soft-gold backdrop-blur-md transition-all hover:bg-soft-gold/20 md:px-7 md:py-3 md:text-lg"
           >
             24시간 상담
           </a>
@@ -153,7 +153,7 @@ export default function Home() {
               heroReady ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}
           >
-            <h1 className="font-serif text-xl font-light leading-snug tracking-wide text-white md:text-3xl lg:text-4xl">
+            <h1 className="font-serif text-2xl font-light leading-snug tracking-wide text-white md:text-4xl lg:text-5xl">
               하늘과 바다가 맞닿은 곳,
               <br />
               <span className="mt-1 block">
@@ -161,7 +161,7 @@ export default function Home() {
               </span>
             </h1>
 
-            <p className="mx-auto mt-5 max-w-xl font-sans text-xs leading-relaxed tracking-wide text-white/40 md:text-sm">
+            <p className="mx-auto mt-5 max-w-xl font-sans text-sm leading-relaxed tracking-wide text-white/40 md:text-base">
               고인을 가장 빛나는 별로, 푸른 바다의 품으로 모시는 정직한 길잡이
               <br />
               성해원(星海園)
@@ -196,7 +196,7 @@ export default function Home() {
         <div className="relative z-10 flex min-h-screen items-center px-6 py-24 md:px-12 lg:px-24">
           <div className="max-w-xl">
             <FadeInOnScroll delay={200}>
-              <h2 className="mt-6 font-serif text-2xl font-light leading-snug tracking-wide text-white md:text-4xl lg:text-5xl">
+              <h2 className="mt-6 font-serif text-3xl font-light leading-snug tracking-wide text-white md:text-5xl lg:text-6xl">
                 누구에게도
                 <br className="md:hidden" />
                 {" "}방해받지 않는
@@ -210,7 +210,7 @@ export default function Home() {
             </FadeInOnScroll>
 
             <FadeInOnScroll delay={500}>
-              <p className="mt-10 font-serif text-base font-light leading-[1.8] tracking-wide text-white/75 md:text-lg">
+              <p className="mt-10 font-serif text-lg font-light leading-[1.8] tracking-wide text-white/75 md:text-xl">
                 오직 한 가족만을 위한 단독선으로
                 <br />
                 온전한 진심을 전하세요.
@@ -239,7 +239,7 @@ export default function Home() {
           </FadeInOnScroll>
 
           <FadeInOnScroll delay={200}>
-            <h2 className="font-serif text-2xl font-light leading-snug tracking-wide text-white md:text-4xl lg:text-5xl">
+            <h2 className="font-serif text-3xl font-light leading-snug tracking-wide text-white md:text-5xl lg:text-6xl">
               별을 품은 남해를
               <br />
               또 한번 섬이 둘러싼,
@@ -252,7 +252,7 @@ export default function Home() {
 
           <FadeInOnScroll delay={400}>
             <div className="mx-auto mt-12 max-w-2xl">
-              <p className="font-serif text-base font-light leading-[1.8] tracking-wide text-white/80 md:text-lg">
+              <p className="font-serif text-lg font-light leading-[1.8] tracking-wide text-white/80 md:text-xl">
                 좁은 납골당과 장지의 답답함을 벗어나,
                 <br />
                 본연의 모습 그대로 자유로울 수 있는 곳.
@@ -262,7 +262,7 @@ export default function Home() {
 
           <FadeInOnScroll delay={600}>
             <div className="mx-auto mt-8 max-w-2xl">
-              <p className="font-serif text-base font-light leading-[1.8] tracking-wide text-white/70 md:text-lg">
+              <p className="font-serif text-lg font-light leading-[1.8] tracking-wide text-white/70 md:text-xl">
                 나로호의 꿈이 시작되는 낭도 앞바다에서
                 <br />
                 고인을 가장 빛나는 별로 모십니다.
@@ -276,7 +276,7 @@ export default function Home() {
       <section className="bg-deep-navy">
         <div className="mx-auto max-w-4xl px-6 py-24 md:px-12 md:py-36">
           <FadeInOnScroll delay={200}>
-            <h2 className="text-center font-serif text-2xl font-light leading-snug tracking-wide text-white md:text-3xl lg:text-4xl">
+            <h2 className="text-center font-serif text-3xl font-light leading-snug tracking-wide text-white md:text-4xl lg:text-5xl">
               법률이 보장하는{" "}
               <span className="text-soft-gold">자연장</span>
             </h2>
@@ -288,10 +288,10 @@ export default function Home() {
 
           <FadeInOnScroll delay={400}>
             <div className="mx-auto mt-10 max-w-2xl rounded-sm border border-soft-gold/10 bg-white/[0.03] p-8">
-              <p className="font-sans text-sm tracking-wider text-soft-gold/60">
+              <p className="font-sans text-lg tracking-wider text-soft-gold/60">
                 「장사 등에 관한 법률」 제2조 제3항
               </p>
-              <p className="mt-4 font-serif text-base font-light leading-[1.8] tracking-wide text-white/70 md:text-lg">
+              <p className="mt-4 font-serif text-lg font-light leading-[1.8] tracking-wide text-white/70 md:text-xl">
                 &ldquo;자연장(自然葬)&rdquo;이란 화장한 유골의 골분(骨粉)을
                 수목·화초·잔디 등의 밑이나 주변에 묻거나
                 해양 등 대통령령으로 정하는 구역에 뿌려
@@ -320,13 +320,13 @@ export default function Home() {
             ].map((item, i) => (
               <FadeInOnScroll key={i} delay={i * 150 + 500}>
                 <div className="flex h-full flex-col rounded-sm border border-soft-gold/10 bg-white/[0.03] p-8">
-                  <span className="font-sans text-xs font-medium tracking-[0.2em] text-soft-gold">
+                  <span className="font-sans text-sm font-medium tracking-[0.2em] text-soft-gold">
                     {item.label}
                   </span>
-                  <h3 className="mt-3 font-serif text-lg font-medium tracking-wide text-white">
+                  <h3 className="mt-3 font-serif text-xl font-medium tracking-wide text-white">
                     {item.title}
                   </h3>
-                  <p className="mt-3 flex-1 font-sans text-sm leading-[1.7] tracking-wide text-white/50 md:text-base">
+                  <p className="mt-3 flex-1 font-sans text-lg leading-[1.7] tracking-wide text-white/50 md:text-lg">
                     {item.desc}
                   </p>
                 </div>
@@ -354,7 +354,7 @@ export default function Home() {
 
             <div>
               <FadeInOnScroll delay={300}>
-                <h2 className="mt-5 font-serif text-2xl font-light leading-snug tracking-wide text-white md:text-3xl lg:text-4xl">
+                <h2 className="mt-5 font-serif text-3xl font-light leading-snug tracking-wide text-white md:text-4xl lg:text-5xl">
                   우주로 향하는 바다,
                   <br />
                   가장 맑고 탁 트인
@@ -368,7 +368,7 @@ export default function Home() {
               </FadeInOnScroll>
 
               <FadeInOnScroll delay={500}>
-                <p className="mt-8 font-serif text-base font-light leading-[1.8] tracking-wide text-white/60 md:text-lg">
+                <p className="mt-8 font-serif text-lg font-light leading-[1.8] tracking-wide text-white/60 md:text-xl">
                   성해원(星海園)은 해안선 5km 밖, 오염되지 않은
                   <br />
                   가장 깊은 남해 먼바다로 향합니다.
@@ -376,7 +376,7 @@ export default function Home() {
               </FadeInOnScroll>
 
               <FadeInOnScroll delay={600}>
-                <p className="mt-6 font-serif text-base font-light leading-[1.8] tracking-wide text-white/60 md:text-lg">
+                <p className="mt-6 font-serif text-lg font-light leading-[1.8] tracking-wide text-white/60 md:text-xl">
                   고흥 나로우주센터가 보이는 시원한 시야는,
                   <br />
                   고인의 영원한 비상(飛上)을 기원하는
@@ -431,7 +431,7 @@ export default function Home() {
       <section className="bg-deep-navy">
         <div className="mx-auto max-w-4xl px-6 py-24 md:px-12 md:py-36">
           <FadeInOnScroll delay={200}>
-            <h2 className="text-center font-serif text-2xl font-light leading-snug tracking-wide text-white md:text-3xl lg:text-4xl">
+            <h2 className="text-center font-serif text-3xl font-light leading-snug tracking-wide text-white md:text-4xl lg:text-5xl">
               추모 당일,
               <br className="md:hidden" />
               {" "}이렇게 진행됩니다
@@ -475,13 +475,13 @@ export default function Home() {
               <FadeInOnScroll key={i} delay={i * 100 + 400}>
                 <div className={`relative mb-12 flex flex-col pl-12 md:pl-0 ${i % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"}`}>
                   <div className={`md:w-1/2 ${i % 2 === 0 ? "md:pr-16 md:text-right" : "md:pl-16 md:text-left"}`}>
-                    <span className="font-sans text-xs font-medium tracking-[0.2em] text-soft-gold/80">
+                    <span className="font-sans text-sm font-medium tracking-[0.2em] text-soft-gold/80">
                       {step.time}
                     </span>
-                    <h3 className="mt-2 font-serif text-base font-medium tracking-wide text-white md:text-lg">
+                    <h3 className="mt-2 font-serif text-lg font-medium tracking-wide text-white md:text-xl">
                       {step.title}
                     </h3>
-                    <p className="mt-2 font-sans text-sm leading-[1.7] tracking-wide text-white/50 md:text-base">
+                    <p className="mt-2 font-sans text-lg leading-[1.7] tracking-wide text-white/50 md:text-lg">
                       {step.desc}
                     </p>
                   </div>
@@ -501,7 +501,7 @@ export default function Home() {
         <div className="mx-auto max-w-4xl px-6 py-24 md:px-12 md:py-36">
           <div className="text-center">
             <FadeInOnScroll delay={200}>
-              <h2 className="mt-6 font-serif text-2xl font-light leading-snug tracking-wide text-white md:text-4xl lg:text-5xl">
+              <h2 className="mt-6 font-serif text-3xl font-light leading-snug tracking-wide text-white md:text-5xl lg:text-6xl">
                 추모대기실에서
                 <br />
                 <span className="text-soft-gold">편안하게 기다리실 수 있습니다</span>
@@ -515,7 +515,7 @@ export default function Home() {
 
           <FadeInOnScroll delay={400}>
             <div className="mx-auto mt-16 max-w-2xl text-center">
-              <p className="font-serif text-base font-light leading-[1.8] tracking-wide text-white/70 md:text-lg">
+              <p className="font-serif text-lg font-light leading-[1.8] tracking-wide text-white/70 md:text-xl">
                 성해원은 추모 대기실이 따로 마련되어 있어
                 <br />
                 배 위에서 제사를 지내는 것이 아닌
@@ -527,7 +527,7 @@ export default function Home() {
 
           <FadeInOnScroll delay={500}>
             <div className="mx-auto mt-10 max-w-2xl text-center">
-              <p className="font-serif text-base font-light leading-[1.8] tracking-wide text-white/70 md:text-lg">
+              <p className="font-serif text-lg font-light leading-[1.8] tracking-wide text-white/70 md:text-xl">
                 고령이시거나 배멀미가 심하신 분,
                 <br />
                 꼭 함께 승선하지 않아도 되는 분들은
@@ -547,7 +547,7 @@ export default function Home() {
       <section className="bg-deep-navy">
         <div className="mx-auto max-w-3xl px-6 py-24 md:px-12 md:py-36">
           <FadeInOnScroll delay={200}>
-            <h2 className="text-center font-serif text-2xl font-light leading-snug tracking-wide text-white md:text-3xl lg:text-4xl">
+            <h2 className="text-center font-serif text-3xl font-light leading-snug tracking-wide text-white md:text-4xl lg:text-5xl">
               자주 묻는 질문
             </h2>
           </FadeInOnScroll>
@@ -606,7 +606,7 @@ export default function Home() {
           </FadeInOnScroll>
 
           <FadeInOnScroll delay={200}>
-            <h2 className="font-serif text-xl font-light leading-snug tracking-wide text-white md:text-3xl lg:text-4xl">
+            <h2 className="font-serif text-2xl font-light leading-snug tracking-wide text-white md:text-4xl lg:text-5xl">
               고인을 추모하는 일에만
               <br className="md:hidden" />
               {" "}집중할 수 있도록,
@@ -622,7 +622,7 @@ export default function Home() {
           </FadeInOnScroll>
 
           <FadeInOnScroll delay={500}>
-            <p className="mx-auto mt-10 max-w-lg font-serif text-base font-light leading-[1.8] tracking-wide text-white/60 md:text-lg">
+            <p className="mx-auto mt-10 max-w-lg font-serif text-lg font-light leading-[1.8] tracking-wide text-white/60 md:text-xl">
               성해원(星海園)은 대표가 직접 상담을 진행합니다.
               <br />
               한 통의 전화면 충분합니다.
@@ -630,7 +630,7 @@ export default function Home() {
           </FadeInOnScroll>
 
           <FadeInOnScroll delay={600}>
-            <p className="mx-auto mt-6 max-w-lg font-serif text-base font-light leading-[1.8] tracking-wide text-white/50 md:text-lg">
+            <p className="mx-auto mt-6 max-w-lg font-serif text-lg font-light leading-[1.8] tracking-wide text-white/50 md:text-xl">
               가족의 마음으로 깊이 공감하되,
               <br />
               전문가의 시선으로 모든 과정을
@@ -642,7 +642,7 @@ export default function Home() {
           <FadeInOnScroll delay={800}>
             <a
               href="tel:01025197592"
-              className="mt-14 inline-flex items-center gap-3 rounded-full border border-soft-gold/30 bg-soft-gold/10 px-10 py-4 font-sans text-base tracking-wider text-soft-gold backdrop-blur-md transition-all hover:bg-soft-gold/20"
+              className="mt-14 inline-flex items-center gap-3 rounded-full border border-soft-gold/30 bg-soft-gold/10 px-10 py-4 font-sans text-lg tracking-wider text-soft-gold backdrop-blur-md transition-all hover:bg-soft-gold/20"
             >
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
@@ -660,10 +660,10 @@ export default function Home() {
             <div className="flex flex-col items-center gap-4">
               <Image src="/images/logo.png" alt="성해원(星海園)" width={72} height={72} />
               <div>
-                <p className="font-serif text-3xl tracking-widest text-soft-gold md:text-4xl">
+                <p className="font-serif text-4xl tracking-widest text-soft-gold md:text-5xl">
                   성해원(星海園)
                 </p>
-                <p className="mt-2 font-sans text-sm tracking-wide text-white/30">
+                <p className="mt-2 font-sans text-lg tracking-wide text-white/30">
                   별을 품은 바다정원의 안식처 · 프라이빗 해상 추모 · 해양장 전문
                 </p>
               </div>
@@ -671,22 +671,22 @@ export default function Home() {
 
             <div className="mt-4 flex flex-wrap items-start justify-center gap-x-8 gap-y-4 text-center md:gap-x-12">
               <div>
-                <p className="font-sans text-xs tracking-wider text-soft-gold/40">대표</p>
-                <p className="mt-0.5 font-sans text-base text-white/70">윤태관</p>
+                <p className="font-sans text-sm tracking-wider text-soft-gold/40">대표</p>
+                <p className="mt-0.5 font-sans text-lg text-white/70">윤태관</p>
               </div>
               <div>
-                <p className="font-sans text-xs tracking-wider text-soft-gold/40">상담 전화</p>
-                <p className="mt-0.5 font-sans text-base text-white/70">010-2519-7592</p>
+                <p className="font-sans text-sm tracking-wider text-soft-gold/40">상담 전화</p>
+                <p className="mt-0.5 font-sans text-lg text-white/70">010-2519-7592</p>
               </div>
               <div>
-                <p className="font-sans text-xs tracking-wider text-soft-gold/40">승선 주소</p>
-                <p className="mt-0.5 font-sans text-base leading-snug text-white/70">
+                <p className="font-sans text-sm tracking-wider text-soft-gold/40">승선 주소</p>
+                <p className="mt-0.5 font-sans text-lg leading-snug text-white/70">
                   전라남도 여수시 화정면 낭도리 낭도선착장
                 </p>
               </div>
               <div>
-                <p className="font-sans text-xs tracking-wider text-soft-gold/40">사업장 주소</p>
-                <p className="mt-0.5 font-sans text-base leading-snug text-white/70">
+                <p className="font-sans text-sm tracking-wider text-soft-gold/40">사업장 주소</p>
+                <p className="mt-0.5 font-sans text-lg leading-snug text-white/70">
                   광주광역시 북구 서하로 463, 2층 B24호(각화동)
                 </p>
               </div>
@@ -694,7 +694,7 @@ export default function Home() {
           </div>
 
           <div className="mt-10 border-t border-white/5 pt-6 text-center">
-            <p className="font-sans text-xs tracking-wider text-white/20">
+            <p className="font-sans text-sm tracking-wider text-white/20">
               © 2026 성해원(星海園). All rights reserved. | 사업자등록번호 431-99-02171 | 대표 윤태관
             </p>
           </div>
@@ -714,7 +714,7 @@ export default function Home() {
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1a2332" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
           </svg>
-          <span className="absolute right-full mr-3 whitespace-nowrap rounded-full bg-soft-gold px-3 py-1.5 font-sans text-[11px] tracking-wide text-deep-navy opacity-0 shadow-lg transition-all duration-300 group-hover:opacity-100">
+          <span className="absolute right-full mr-3 whitespace-nowrap rounded-full bg-soft-gold px-3 py-1.5 font-sans text-sm tracking-wide text-deep-navy opacity-0 shadow-lg transition-all duration-300 group-hover:opacity-100">
             전화 상담
           </span>
         </a>
@@ -727,7 +727,7 @@ export default function Home() {
           <svg width="24" height="24" viewBox="0 0 24 24" fill="#3C1E1E">
             <path d="M12 3C6.48 3 2 6.58 2 11c0 2.83 1.88 5.31 4.7 6.72-.15.56-.8 2.95-.83 3.12 0 0-.02.14.07.2.09.05.2.01.2.01.26-.04 3.04-2 3.98-2.65.6.09 1.22.13 1.88.13 5.52 0 10-3.58 10-8s-4.48-8-10-8z"/>
           </svg>
-          <span className="absolute right-full mr-3 whitespace-nowrap rounded-full bg-[#FEE500] px-3 py-1.5 font-sans text-[11px] tracking-wide text-[#3C1E1E] opacity-0 shadow-lg transition-all duration-300 group-hover:opacity-100">
+          <span className="absolute right-full mr-3 whitespace-nowrap rounded-full bg-[#FEE500] px-3 py-1.5 font-sans text-sm tracking-wide text-[#3C1E1E] opacity-0 shadow-lg transition-all duration-300 group-hover:opacity-100">
             카카오톡 문의
           </span>
         </a>
