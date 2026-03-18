@@ -42,18 +42,14 @@ export default function Home() {
   const [introPhase, setIntroPhase] = useState<IntroPhase>("logo");
   const [ctaVisible, setCtaVisible] = useState(false);
   const [heroReady, setHeroReady] = useState(false);
-  const [heroTextVisible, setHeroTextVisible] = useState(true);
-
   useEffect(() => {
     const t1 = setTimeout(() => setIntroPhase("brand"), 1800);
     const t2 = setTimeout(() => setIntroPhase("done"), 3600);
     const t3 = setTimeout(() => setHeroReady(true), 4200);
-    const t4 = setTimeout(() => setHeroTextVisible(false), 9200);
     return () => {
       clearTimeout(t1);
       clearTimeout(t2);
       clearTimeout(t3);
-      clearTimeout(t4);
     };
   }, []);
 
@@ -154,7 +150,7 @@ export default function Home() {
         <div className="relative z-10 flex h-full flex-col items-end justify-end px-6 pb-28 text-center md:pb-32">
           <div
             className={`w-full transition-all duration-[2000ms] ease-out ${
-              heroReady && heroTextVisible ? "opacity-100 translate-y-0" : heroReady ? "opacity-0 translate-y-4" : "opacity-0 translate-y-8"
+              heroReady ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}
           >
             <h1 className="font-serif text-xl font-light leading-snug tracking-wide text-white md:text-3xl lg:text-4xl">
