@@ -92,7 +92,7 @@ export default function Home() {
         </div>
 
         <div
-          className={`absolute transition-all duration-1000 ease-out ${
+          className={`absolute flex flex-col items-center text-center transition-all duration-1000 ease-out ${
             introPhase === "brand"
               ? "opacity-100 translate-y-0"
               : introPhase === "logo"
@@ -103,10 +103,10 @@ export default function Home() {
           <p className="font-serif text-4xl tracking-[0.2em] text-soft-gold md:text-5xl">
             성해원
           </p>
-          <p className="mt-2 text-center font-serif text-lg tracking-[0.15em] text-soft-gold/60 md:text-xl">
+          <p className="mt-2 font-serif text-lg tracking-[0.15em] text-soft-gold/60 md:text-xl">
             星海園
           </p>
-          <p className="mt-3 text-center font-sans text-xs tracking-[0.3em] text-white/40">
+          <p className="mt-3 font-sans text-xs tracking-[0.3em] text-white/40">
             별을 품은 바다정원의 안식처
           </p>
         </div>
