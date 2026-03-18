@@ -140,8 +140,11 @@ export default function Home() {
           <iframe
             src="https://www.youtube.com/embed/Jq5iJ5QMhUU?autoplay=1&mute=1&loop=1&playlist=Jq5iJ5QMhUU&controls=0&showinfo=0&modestbranding=1&rel=0&playsinline=1&enablejsapi=1"
             title="성해원(星海園) 영상"
-            className="pointer-events-none absolute left-1/2 top-1/2 h-[120%] w-[120%] -translate-x-1/2 -translate-y-1/2 border-0 object-cover"
-            style={{ aspectRatio: "16/9", minWidth: "100%", minHeight: "100%" }}
+            className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 border-0"
+            style={{
+              width: "max(100vw, 177.78vh)",
+              height: "max(100vh, 56.25vw)",
+            }}
             allow="autoplay; encrypted-media"
             allowFullScreen
           />
