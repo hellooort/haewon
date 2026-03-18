@@ -114,16 +114,16 @@ export default function Home() {
           introPhase === "done" ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"
         }`}
       >
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 md:px-12">
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 md:px-12 md:py-5">
           <a href="#" className="flex items-center gap-3">
-            <Image src="/images/logo.png" alt="성해원(星海園)" width={36} height={36} />
-            <span className="font-serif text-lg tracking-widest text-soft-gold drop-shadow-lg md:text-xl">
+            <Image src="/images/logo.png" alt="성해원(星海園)" width={44} height={44} className="md:h-12 md:w-12" />
+            <span className="font-serif text-xl tracking-widest text-soft-gold drop-shadow-lg md:text-2xl">
               성해원
             </span>
           </a>
           <a
             href="tel:01025197592"
-            className="rounded-full border border-soft-gold/30 bg-soft-gold/10 px-5 py-2 font-sans text-xs tracking-wider text-soft-gold backdrop-blur-md transition-all hover:bg-soft-gold/20 md:text-sm"
+            className="rounded-full border border-soft-gold/30 bg-soft-gold/10 px-6 py-2.5 font-sans text-sm tracking-wider text-soft-gold backdrop-blur-md transition-all hover:bg-soft-gold/20 md:px-7 md:py-3 md:text-base"
           >
             24시간 상담
           </a>
@@ -537,22 +537,7 @@ export default function Home() {
             </div>
           </FadeInOnScroll>
 
-          <FadeInOnScroll delay={600}>
-            <div className="mx-auto mt-16 max-w-3xl">
-              <div className="flex aspect-[16/9] items-center justify-center rounded-sm border border-soft-gold/10 bg-white/[0.02]">
-                <div className="text-center">
-                  <svg width="48" height="48" viewBox="0 0 48 48" fill="none" className="mx-auto text-soft-gold/30">
-                    <rect x="4" y="8" width="40" height="32" rx="4" stroke="currentColor" strokeWidth="1.5" />
-                    <path d="M4 16h40M16 8v32" stroke="currentColor" strokeWidth="1.5" />
-                    <circle cx="32" cy="28" r="4" stroke="currentColor" strokeWidth="1.5" />
-                  </svg>
-                  <p className="mt-4 font-sans text-xs tracking-wider text-white/20">
-                    추모대기실 이미지 준비 중
-                  </p>
-                </div>
-              </div>
-            </div>
-          </FadeInOnScroll>
+          {/* 추모대기실 이미지 — 추후 추가 예정 */}
         </div>
       </section>
 
