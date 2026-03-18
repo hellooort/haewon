@@ -516,13 +516,11 @@ export default function Home() {
           <FadeInOnScroll delay={400}>
             <div className="mx-auto mt-16 max-w-2xl text-center">
               <p className="font-serif text-sm font-light leading-[1.8] tracking-wide text-white/70 md:text-base">
-                고령이시거나 배멀미가 심하신 분,
+                성해원은 추모 대기실이 따로 마련되어 있어
                 <br />
-                꼭 함께 승선하지 않아도 되는 분들은
+                배 위에서 제사를 지내는 것이 아닌
                 <br />
-                성해원(星海園) 추모대기실에서
-                <br className="md:hidden" />
-                {" "}편안히 대기하실 수 있습니다.
+                추모실에서 안전하고 편안하게 제사를 지낼 수 있습니다.
               </p>
             </div>
           </FadeInOnScroll>
@@ -530,9 +528,13 @@ export default function Home() {
           <FadeInOnScroll delay={500}>
             <div className="mx-auto mt-10 max-w-2xl text-center">
               <p className="font-serif text-sm font-light leading-[1.8] tracking-wide text-white/70 md:text-base">
-                대기 중 제사를 지낼 수 있는 공간도 마련되어 있어
+                고령이시거나 배멀미가 심하신 분,
                 <br />
-                유족분들의 마음을 온전히 담아낼 수 있습니다.
+                꼭 함께 승선하지 않아도 되는 분들은
+                <br />
+                성해원(星海園) 추모 대기실에서
+                <br className="md:hidden" />
+                {" "}편안히 대기하실 수 있습니다.
               </p>
             </div>
           </FadeInOnScroll>
