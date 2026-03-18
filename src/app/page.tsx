@@ -371,7 +371,7 @@ export default function Home() {
                 <p className="mt-8 font-serif text-sm font-light leading-[1.8] tracking-wide text-white/60 md:text-base">
                   성해원(星海園)은 해안선 5km 밖,
                   <br className="md:hidden" />
-                  오염되지 않은
+                  {" "}오염되지 않은
                   <br className="hidden lg:block" />
                   가장 깊은 남해
                   <br className="md:hidden" />
