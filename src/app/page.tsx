@@ -373,9 +373,9 @@ export default function Home() {
                   <br className="md:hidden" />
                   {" "}오염되지 않은
                   <br className="hidden lg:block" />
-                  가장 깊은 남해
+                  {" "}가장 깊은 남해
                   <br className="md:hidden" />
-                  먼바다로 향합니다.
+                  {" "}먼바다로 향합니다.
                 </p>
               </FadeInOnScroll>
 
@@ -383,15 +383,15 @@ export default function Home() {
                 <p className="mt-6 font-serif text-sm font-light leading-[1.8] tracking-wide text-white/60 md:text-base">
                   고흥 나로우주센터가
                   <br className="md:hidden" />
-                  정면으로 마주 보이는
+                  {" "}정면으로 마주 보이는
                   <br className="hidden lg:block" />
-                  시원한 시야는, 고인의
+                  {" "}시원한 시야는, 고인의
                   <br className="md:hidden" />
-                  영원한 비상(飛上)을 기원하는
+                  {" "}영원한 비상(飛上)을 기원하는
                   <br className="hidden lg:block" />
-                  성해원(星海園)만의 독보적인
+                  {" "}성해원(星海園)만의 독보적인
                   <br className="md:hidden" />
-                  산분 포인트입니다.
+                  {" "}산분 포인트입니다.
                 </p>
               </FadeInOnScroll>
             </div>
@@ -442,7 +442,7 @@ export default function Home() {
             <h2 className="text-center font-serif text-2xl font-light leading-snug tracking-wide text-white md:text-3xl lg:text-4xl">
               추모 당일,
               <br className="md:hidden" />
-              이렇게 진행됩니다
+              {" "}이렇게 진행됩니다
             </h2>
           </FadeInOnScroll>
 
@@ -654,7 +654,7 @@ export default function Home() {
               <br />
               전문가의 시선으로 모든 과정을
               <br className="md:hidden" />
-              빈틈없이 챙기겠습니다.
+              {" "}빈틈없이 챙기겠습니다.
             </p>
           </FadeInOnScroll>
 
