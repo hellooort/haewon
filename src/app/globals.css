@@ -7,7 +7,7 @@
   --color-warm-white: #f5f3ef;
   --color-deep-navy: #1a2332;
   --color-ocean-blue: #2c5f7c;
-  --color-soft-gold: #e8c547;
+  --color-soft-gold: lab(83 11.17 105.08);
   --color-muted-text: #6b6b6b;
   --font-serif: var(--font-noto-serif-kr);
   --font-sans: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
