@@ -163,8 +163,9 @@ export default function Home() {
             </h1>
 
             <p className="mx-auto mt-5 max-w-xl font-sans text-[11px] leading-relaxed tracking-wide text-white/40 md:text-xs">
-              고인을 가장 빛나는 별로, 푸른 바다의 품으로 모시는
-              정직한 길잡이 성해원(星海園)
+              고인을 가장 빛나는 별로, 푸른 바다의 품으로 모시는 정직한 길잡이
+              <br />
+              성해원(星海園)
             </p>
           </div>
 
@@ -369,29 +370,19 @@ export default function Home() {
 
               <FadeInOnScroll delay={500}>
                 <p className="mt-8 font-serif text-sm font-light leading-[1.8] tracking-wide text-white/60 md:text-base">
-                  성해원(星海園)은 해안선 5km 밖,
-                  <br className="md:hidden" />
-                  {" "}오염되지 않은
-                  <br className="hidden lg:block" />
-                  {" "}가장 깊은 남해
-                  <br className="md:hidden" />
-                  {" "}먼바다로 향합니다.
+                  성해원(星海園)은 해안선 5km 밖, 오염되지 않은
+                  <br />
+                  가장 깊은 남해 먼바다로 향합니다.
                 </p>
               </FadeInOnScroll>
 
               <FadeInOnScroll delay={600}>
                 <p className="mt-6 font-serif text-sm font-light leading-[1.8] tracking-wide text-white/60 md:text-base">
-                  고흥 나로우주센터가
-                  <br className="md:hidden" />
-                  {" "}정면으로 마주 보이는
-                  <br className="hidden lg:block" />
-                  {" "}시원한 시야는, 고인의
-                  <br className="md:hidden" />
-                  {" "}영원한 비상(飛上)을 기원하는
-                  <br className="hidden lg:block" />
-                  {" "}성해원(星海園)만의 독보적인
-                  <br className="md:hidden" />
-                  {" "}산분 포인트입니다.
+                  고흥 나로우주센터가 보이는
+                  <br />
+                  시원한 시야는, 고인의 영원한 비상(飛上)을 기원하는
+                  <br />
+                  성해원(星海園)만의 독보적인 산분 포인트입니다.
                 </p>
               </FadeInOnScroll>
             </div>
