@@ -136,11 +136,7 @@ export default function Home() {
           <iframe
             src="https://www.youtube.com/embed/Jq5iJ5QMhUU?autoplay=1&mute=1&loop=1&playlist=Jq5iJ5QMhUU&controls=0&showinfo=0&modestbranding=1&rel=0&playsinline=1&enablejsapi=1"
             title="성해원(星海園) 영상"
-            className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 border-0"
-            style={{
-              width: "max(100vw, 177.78vh)",
-              height: "max(100vh, 56.25vw)",
-            }}
+            className="pointer-events-none absolute inset-0 h-full w-full border-0 object-cover"
             allow="autoplay; encrypted-media"
             allowFullScreen
           />
@@ -289,11 +285,13 @@ export default function Home() {
                 「장사 등에 관한 법률」 제2조 제3항
               </p>
               <p className="mt-4 font-serif text-lg font-light leading-[1.5] tracking-normal text-white/90 md:text-xl">
-                &ldquo;자연장(自然葬)&rdquo;이란 화장한 유골의 골분(骨粉)을
-                <br />
-                수목·화초·잔디 등의 밑이나 주변에 묻거나 해양 등 대통령령으로
-                <br />
-                정하는 구역에 뿌려 장사하는 것을 말한다.
+                &ldquo;자연장(自然葬)&rdquo;이란 화장한
+                <br className="md:hidden" />
+                {" "}유골의 골분(骨粉)을 수목·화초·잔디 등의 밑이나
+                <br className="md:hidden" />
+                {" "}주변에 묻거나 해양 등 대통령령으로
+                <br className="md:hidden" />
+                {" "}정하는 구역에 뿌려 장사하는 것을 말한다.
               </p>
             </div>
           </FadeInOnScroll>
@@ -308,12 +306,12 @@ export default function Home() {
               {
                 label: "친환경",
                 title: "자연으로 완전한 회귀",
-                desc: "고온 화장 후 미세하게 분골된 유골은 자연 성분(칼슘·인)만 남아 해양 생태계에 어떠한 해도 끼치지 않습니다.",
+                desc: "고온 화장 후 미세하게 분골된 유골은 \n자연 성분(칼슘·인)만 남아 해양 생태계에 \n어떠한 해도 끼치지 않습니다.",
               },
               {
                 label: "영속적",
                 title: "묘지 관리 부담 제로",
-                desc: "묘지 이전, 벌초, 관리비 걱정 없이 매년 바다를 찾아 자유롭게 추모할 수 있어 후손의 부담이 완전히 사라집니다.",
+                desc: "묘지 이전, 벌초, 관리비 걱정 없이 \n매년 바다를 찾아 자유롭게 추모할 수 있어 \n후손의 부담이 완전히 사라집니다.",
               },
             ].map((item, i) => (
               <FadeInOnScroll key={i} delay={i * 150 + 500}>
@@ -324,7 +322,7 @@ export default function Home() {
                   <h3 className="mt-3 font-serif text-xl font-medium tracking-normal text-white">
                     {item.title}
                   </h3>
-                  <p className="mt-3 flex-1 font-sans text-lg leading-[1.6] tracking-normal text-white/90">
+                  <p className="mt-3 flex-1 whitespace-pre-line font-sans text-lg leading-[1.6] tracking-normal text-white/90 md:whitespace-normal">
                     {item.desc}
                   </p>
                 </div>
@@ -445,12 +443,12 @@ export default function Home() {
               {
                 time: "STEP 01",
                 title: "추모실 집결 및 안내",
-                desc: "여수 낭도 성해원(星海園) 추모실로 고인을 모시고, 당일 절차를 안내합니다. (제사는 선택사항)",
+                desc: "여수 낭도 성해원(星海園) 추모실로 고인을 모시고, \n당일 절차를 안내합니다. (제사는 선택사항)",
               },
               {
                 time: "STEP 02",
                 title: "단독 추모선 출항",
-                desc: "오직 고인과 유족분들만 태운 단독 추모선이 출항합니다. (최대 16인승)",
+                desc: "오직 고인과 유족분들만 태운 \n단독 추모선이 출항합니다. (최대 16인승)",
               },
               {
                 time: "STEP 03",
@@ -460,12 +458,12 @@ export default function Home() {
               {
                 time: "STEP 04",
                 title: "산분 및 헌화",
-                desc: "고인과의 마지막 인사 후 산분하고, 마지막으로 헌화를 진행합니다.",
+                desc: "고인과의 마지막 인사 후 산분하고, \n마지막으로 헌화를 진행합니다.",
               },
               {
                 time: "STEP 05",
                 title: "귀항 및 증명서 발급",
-                desc: "귀항 후 고인을 모신 해양장지의 GPS 좌표를 기록한 증명서를 발급합니다.",
+                desc: "귀항 후 고인을 모신 해양장지의 \nGPS 좌표를 기록한 증명서를 발급합니다.",
               },
             ].map((step, i) => (
               <FadeInOnScroll key={i} delay={i * 100 + 400}>
@@ -477,7 +475,7 @@ export default function Home() {
                     <h3 className="mt-2 font-serif text-lg font-medium tracking-normal text-white md:text-xl">
                       {step.title}
                     </h3>
-                    <p className="mt-2 font-sans text-lg leading-[1.6] tracking-normal text-white/90">
+                    <p className="mt-2 whitespace-pre-line font-sans text-lg leading-[1.6] tracking-normal text-white/90 md:whitespace-normal">
                       {step.desc}
                     </p>
                   </div>
@@ -516,7 +514,9 @@ export default function Home() {
                 <br />
                 배 위에서 제사를 지내는 것이 아닌
                 <br />
-                추모실에서 안전하고 편안하게 제사를 지낼 수 있습니다.
+                추모실에서 안전하고 편안하게
+                <br className="md:hidden" />
+                {" "}제사를 지낼 수 있습니다.
               </p>
             </div>
           </FadeInOnScroll>
