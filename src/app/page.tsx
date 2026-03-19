@@ -317,14 +317,14 @@ export default function Home() {
               },
             ].map((item, i) => (
               <FadeInOnScroll key={i} delay={i * 150 + 500}>
-                <div className="flex h-full flex-col rounded-sm border border-soft-gold/10 bg-white/[0.03] p-8">
-                  <span className="font-sans text-sm font-medium tracking-[0.2em] text-soft-gold">
+                <div className="flex h-full flex-col rounded-sm border border-soft-gold/10 bg-white/[0.03] p-6 md:p-8">
+                  <span className="font-sans text-xs font-medium tracking-[0.2em] text-soft-gold md:text-sm">
                     {item.label}
                   </span>
-                  <h3 className="mt-3 font-serif text-xl font-medium tracking-normal text-white">
+                  <h3 className="mt-3 font-serif text-base font-medium tracking-normal text-white md:text-lg">
                     {item.title}
                   </h3>
-                  <p className="mt-3 flex-1 font-sans text-base leading-[1.6] tracking-normal text-white/90 md:text-base">
+                  <p className="mt-3 flex-1 font-sans text-sm leading-[1.6] tracking-normal text-white/90 md:text-sm">
                     {item.desc}
                   </p>
                 </div>
