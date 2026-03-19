@@ -194,7 +194,7 @@ export default function Home() {
         </div>
 
         <div className="relative z-10 flex min-h-screen items-center px-6 py-24 md:px-12 lg:px-24">
-          <div className="max-w-xl">
+          <div className="max-w-2xl">
             <FadeInOnScroll delay={200}>
               <h2 className="mt-6 font-serif text-3xl font-light leading-snug tracking-normal text-white md:text-5xl lg:text-6xl">
                 <span className="md:hidden">누구에게도<br />방해받지 않는</span>
@@ -271,7 +271,7 @@ export default function Home() {
 
       {/* ===== Section 4: 자연장이란? ===== */}
       <section className="bg-deep-navy">
-        <div className="mx-auto max-w-4xl px-6 py-24 md:px-12 md:py-36">
+        <div className="mx-auto max-w-6xl px-6 py-24 md:px-12 md:py-36">
           <FadeInOnScroll delay={200}>
             <h2 className="text-center font-serif text-3xl font-light leading-snug tracking-normal text-white md:text-4xl lg:text-5xl">
               법률이 보장하는{" "}
@@ -284,7 +284,7 @@ export default function Home() {
           </FadeInOnScroll>
 
           <FadeInOnScroll delay={400}>
-            <div className="mx-auto mt-10 max-w-2xl rounded-sm border border-soft-gold/10 bg-white/[0.03] p-8">
+            <div className="mx-auto mt-10 max-w-3xl rounded-sm border border-soft-gold/10 bg-white/[0.03] p-8">
               <p className="font-sans text-lg tracking-normal text-soft-gold/60">
                 「장사 등에 관한 법률」 제2조 제3항
               </p>
@@ -317,14 +317,14 @@ export default function Home() {
               },
             ].map((item, i) => (
               <FadeInOnScroll key={i} delay={i * 150 + 500}>
-                <div className="flex h-full flex-col rounded-sm border border-soft-gold/10 bg-white/[0.03] p-6 md:p-8">
-                  <span className="font-sans text-xs font-medium tracking-[0.2em] text-soft-gold md:text-sm">
+                <div className="flex h-full flex-col rounded-sm border border-soft-gold/10 bg-white/[0.03] p-8">
+                  <span className="font-sans text-sm font-medium tracking-[0.2em] text-soft-gold">
                     {item.label}
                   </span>
-                  <h3 className="mt-3 font-serif text-base font-medium tracking-normal text-white md:text-lg">
+                  <h3 className="mt-3 font-serif text-xl font-medium tracking-normal text-white">
                     {item.title}
                   </h3>
-                  <p className="mt-3 flex-1 font-sans text-sm leading-[1.6] tracking-normal text-white/90 md:text-sm">
+                  <p className="mt-3 flex-1 font-sans text-lg leading-[1.6] tracking-normal text-white/90">
                     {item.desc}
                   </p>
                 </div>
@@ -426,7 +426,7 @@ export default function Home() {
 
       {/* ===== Section 6: 추모 당일 절차 타임라인 ===== */}
       <section className="bg-deep-navy">
-        <div className="mx-auto max-w-4xl px-6 py-24 md:px-12 md:py-36">
+        <div className="mx-auto max-w-5xl px-6 py-24 md:px-12 md:py-36">
           <FadeInOnScroll delay={200}>
             <h2 className="text-center font-serif text-3xl font-light leading-snug tracking-normal text-white md:text-4xl lg:text-5xl">
               <span className="md:hidden">추모 당일,<br />이렇게 진행됩니다</span>
@@ -477,7 +477,7 @@ export default function Home() {
                     <h3 className="mt-2 font-serif text-lg font-medium tracking-normal text-white md:text-xl">
                       {step.title}
                     </h3>
-                    <p className="mt-2 font-sans text-base leading-[1.6] tracking-normal text-white/90 md:text-base">
+                    <p className="mt-2 font-sans text-lg leading-[1.6] tracking-normal text-white/90">
                       {step.desc}
                     </p>
                   </div>
@@ -494,7 +494,7 @@ export default function Home() {
 
       {/* ===== Section 7: 추모대기실 안내 ===== */}
       <section className="bg-[#0d1a2a]">
-        <div className="mx-auto max-w-4xl px-6 py-24 md:px-12 md:py-36">
+        <div className="mx-auto max-w-5xl px-6 py-24 md:px-12 md:py-36">
           <div className="text-center">
             <FadeInOnScroll delay={200}>
               <h2 className="mt-6 font-serif text-3xl font-light leading-snug tracking-normal text-white md:text-5xl lg:text-6xl">
@@ -510,7 +510,7 @@ export default function Home() {
           </div>
 
           <FadeInOnScroll delay={400}>
-            <div className="mx-auto mt-16 max-w-2xl text-center">
+            <div className="mx-auto mt-16 max-w-3xl text-center">
               <p className="font-serif text-lg font-light leading-[1.5] tracking-normal text-white/90 md:text-xl">
                 성해원은 추모 대기실이 따로 마련되어 있어
                 <br />
@@ -522,7 +522,7 @@ export default function Home() {
           </FadeInOnScroll>
 
           <FadeInOnScroll delay={500}>
-            <div className="mx-auto mt-10 max-w-2xl text-center">
+            <div className="mx-auto mt-10 max-w-3xl text-center">
               <p className="font-serif text-lg font-light leading-[1.5] tracking-normal text-white/90 md:text-xl">
                 고령이시거나 배멀미가 심하신 분,
                 <br />
@@ -540,7 +540,7 @@ export default function Home() {
 
       {/* ===== Section 8: FAQ ===== */}
       <section className="bg-deep-navy">
-        <div className="mx-auto max-w-3xl px-6 py-24 md:px-12 md:py-36">
+        <div className="mx-auto max-w-4xl px-6 py-24 md:px-12 md:py-36">
           <FadeInOnScroll delay={200}>
             <h2 className="text-center font-serif text-3xl font-light leading-snug tracking-normal text-white md:text-4xl lg:text-5xl">
               자주 묻는 질문
@@ -615,7 +615,7 @@ export default function Home() {
           </FadeInOnScroll>
 
           <FadeInOnScroll delay={500}>
-            <p className="mx-auto mt-10 max-w-lg font-serif text-lg font-light leading-[1.5] tracking-normal text-white/90 md:text-xl">
+            <p className="mx-auto mt-10 max-w-2xl font-serif text-lg font-light leading-[1.5] tracking-normal text-white/90 md:text-xl">
               성해원(星海園)은 대표가 직접 상담을 진행합니다.
               <br />
               한 통의 전화면 충분합니다.
@@ -623,7 +623,7 @@ export default function Home() {
           </FadeInOnScroll>
 
           <FadeInOnScroll delay={600}>
-            <p className="mx-auto mt-6 max-w-lg font-serif text-lg font-light leading-[1.5] tracking-normal text-white/90 md:text-xl">
+            <p className="mx-auto mt-6 max-w-2xl font-serif text-lg font-light leading-[1.5] tracking-normal text-white/90 md:text-xl">
               가족의 마음으로 깊이 공감하되,
               <br />
               <span className="md:hidden">전문가의 시선으로 모든 과정을<br />빈틈없이 챙기겠습니다.</span>
