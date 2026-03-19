@@ -194,7 +194,7 @@ export default function Home() {
         </div>
 
         <div className="relative z-10 flex min-h-screen items-center px-6 py-24 md:px-12 lg:px-24">
-          <div className="max-w-2xl">
+          <div>
             <FadeInOnScroll delay={200}>
               <h2 className="mt-6 font-serif text-3xl font-light leading-snug tracking-normal text-white md:text-5xl lg:text-6xl">
                 <span className="md:hidden">누구에게도<br />방해받지 않는</span>
