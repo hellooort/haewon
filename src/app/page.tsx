@@ -197,9 +197,8 @@ export default function Home() {
           <div className="max-w-xl">
             <FadeInOnScroll delay={200}>
               <h2 className="mt-6 font-serif text-3xl font-light leading-snug tracking-normal text-white md:text-5xl lg:text-6xl">
-                누구에게도
-                <br className="md:hidden" />
-                {" "}방해받지 않는
+                <span className="md:hidden">누구에게도<br />방해받지 않는</span>
+                <span className="hidden md:inline">누구에게도 방해받지 않는</span>
                 <br />
                 <span className="text-soft-gold">우리만의 바다 정원</span>
               </h2>
@@ -244,9 +243,7 @@ export default function Home() {
               <br />
               또 한번 섬이 둘러싼,
               <br />
-              <span className="text-soft-gold/80">하늘과 가장 맞닿은
-              <br className="md:hidden" />
-              {" "}바다 정원</span>
+              <span className="text-soft-gold/80"><span className="md:hidden">하늘과 가장 맞닿은<br />바다 정원</span><span className="hidden md:inline">하늘과 가장 맞닿은 바다 정원</span></span>
             </h2>
           </FadeInOnScroll>
 
@@ -293,9 +290,10 @@ export default function Home() {
               </p>
               <p className="mt-4 font-serif text-lg font-light leading-[1.5] tracking-normal text-white/90 md:text-xl">
                 &ldquo;자연장(自然葬)&rdquo;이란 화장한 유골의 골분(骨粉)을
-                수목·화초·잔디 등의 밑이나 주변에 묻거나
-                해양 등 대통령령으로 정하는 구역에 뿌려
-                장사하는 것을 말한다.
+                <br />
+                수목·화초·잔디 등의 밑이나 주변에 묻거나 해양 등 대통령령으로
+                <br />
+                정하는 구역에 뿌려 장사하는 것을 말한다.
               </p>
             </div>
           </FadeInOnScroll>
@@ -326,7 +324,7 @@ export default function Home() {
                   <h3 className="mt-3 font-serif text-xl font-medium tracking-normal text-white">
                     {item.title}
                   </h3>
-                  <p className="mt-3 flex-1 font-sans text-lg leading-[1.5] tracking-normal text-white/90 md:text-lg">
+                  <p className="mt-3 flex-1 font-sans text-base leading-[1.6] tracking-normal text-white/90 md:text-base">
                     {item.desc}
                   </p>
                 </div>
@@ -381,9 +379,8 @@ export default function Home() {
                   <br />
                   고인의 영원한 비상(飛上)을 기원하는
                   <br />
-                  성해원(星海園)만의
-                  <br className="md:hidden" />
-                  {" "}독보적인 산분 포인트입니다.
+                  <span className="md:hidden">성해원(星海園)만의<br />독보적인 산분 포인트입니다.</span>
+                  <span className="hidden md:inline">성해원(星海園)만의 독보적인 산분 포인트입니다.</span>
                 </p>
               </FadeInOnScroll>
             </div>
@@ -432,9 +429,8 @@ export default function Home() {
         <div className="mx-auto max-w-4xl px-6 py-24 md:px-12 md:py-36">
           <FadeInOnScroll delay={200}>
             <h2 className="text-center font-serif text-3xl font-light leading-snug tracking-normal text-white md:text-4xl lg:text-5xl">
-              추모 당일,
-              <br className="md:hidden" />
-              {" "}이렇게 진행됩니다
+              <span className="md:hidden">추모 당일,<br />이렇게 진행됩니다</span>
+              <span className="hidden md:inline">추모 당일, 이렇게 진행됩니다</span>
             </h2>
           </FadeInOnScroll>
 
@@ -481,7 +477,7 @@ export default function Home() {
                     <h3 className="mt-2 font-serif text-lg font-medium tracking-normal text-white md:text-xl">
                       {step.title}
                     </h3>
-                    <p className="mt-2 font-sans text-lg leading-[1.5] tracking-normal text-white/90 md:text-lg">
+                    <p className="mt-2 font-sans text-base leading-[1.6] tracking-normal text-white/90 md:text-base">
                       {step.desc}
                     </p>
                   </div>
@@ -532,9 +528,8 @@ export default function Home() {
                 <br />
                 꼭 함께 승선하지 않아도 되는 분들은
                 <br />
-                성해원(星海園) 추모 대기실에서
-                <br className="md:hidden" />
-                {" "}편안히 대기하실 수 있습니다.
+                <span className="md:hidden">성해원(星海園) 추모 대기실에서<br />편안히 대기하실 수 있습니다.</span>
+                <span className="hidden md:inline">성해원(星海園) 추모 대기실에서 편안히 대기하실 수 있습니다.</span>
               </p>
             </div>
           </FadeInOnScroll>
@@ -607,13 +602,11 @@ export default function Home() {
 
           <FadeInOnScroll delay={200}>
             <h2 className="font-serif text-2xl font-light leading-snug tracking-normal text-white md:text-4xl lg:text-5xl">
-              고인을 추모하는 일에만
-              <br className="md:hidden" />
-              {" "}집중할 수 있도록,
+              <span className="md:hidden">고인을 추모하는 일에만<br />집중할 수 있도록,</span>
+              <span className="hidden md:inline">고인을 추모하는 일에만 집중할 수 있도록,</span>
               <br />
-              복잡한 절차와 준비는
-              <br className="md:hidden" />
-              {" "}<span className="text-soft-gold">성해원(星海園)이 모두 다 하겠습니다.</span>
+              <span className="md:hidden">복잡한 절차와 준비는<br /><span className="text-soft-gold">성해원(星海園)이 모두 다 하겠습니다.</span></span>
+              <span className="hidden md:inline">복잡한 절차와 준비는 <span className="text-soft-gold">성해원(星海園)이 모두 다 하겠습니다.</span></span>
             </h2>
           </FadeInOnScroll>
 
@@ -633,9 +626,8 @@ export default function Home() {
             <p className="mx-auto mt-6 max-w-lg font-serif text-lg font-light leading-[1.5] tracking-normal text-white/90 md:text-xl">
               가족의 마음으로 깊이 공감하되,
               <br />
-              전문가의 시선으로 모든 과정을
-              <br className="md:hidden" />
-              {" "}빈틈없이 챙기겠습니다.
+              <span className="md:hidden">전문가의 시선으로 모든 과정을<br />빈틈없이 챙기겠습니다.</span>
+              <span className="hidden md:inline">전문가의 시선으로 모든 과정을 빈틈없이 챙기겠습니다.</span>
             </p>
           </FadeInOnScroll>
 
