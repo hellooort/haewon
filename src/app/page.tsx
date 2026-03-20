@@ -172,7 +172,9 @@ export default function Home() {
             </h1>
 
             <p className="mx-auto mt-5 max-w-xl font-sans text-sm leading-[1.35] tracking-normal text-white/90 md:leading-normal md:text-base">
-              고인을 가장 빛나는 별로, 푸른 바다의 품으로 모시는 정직한 길잡이
+              고인을 가장 빛나는 별로,
+              <br className="md:hidden" />
+              {" "}푸른 바다의 품으로 모시는 정직한 길잡이
               <br />
               성해원(星海園)
             </p>
@@ -298,7 +300,7 @@ export default function Home() {
           </FadeInOnScroll>
 
           <FadeInOnScroll delay={400}>
-            <div className="mx-auto mt-10 max-w-3xl rounded-sm border border-soft-gold/10 bg-white/[0.03] p-8">
+            <div className="mx-auto mt-10 max-w-3xl rounded-sm border border-soft-gold/10 bg-white/[0.03] p-5 md:p-8">
               <p className="font-sans text-lg tracking-normal text-soft-gold/60">
                 「장사 등에 관한 법률」 제2조 제3항
               </p>
@@ -319,21 +321,21 @@ export default function Home() {
               {
                 label: "합법적",
                 title: "법률이 보장하는 자연장",
-                desc: "「장사 등에 관한 법률」 \n제2조 제3항에 의거,\n 해안으로부터 5km 이상 떨어진 \n해역에서 시행하는 \n합법적인 장례 방식입니다.",
+                desc: "「장사 등에 관한 법률」\n제2조 제3항에 의거,\n해안으로부터 5km 이상 떨어진\n해역에서 시행하는\n합법적인 장례 방식입니다.",
               },
               {
                 label: "친환경",
                 title: "자연으로 완전한 회귀",
-                desc: "고온 화장 후 미세하게 \n분골된 유골은 자연 성분(칼슘·인)만\n 남아 해양 생태계에 어떠한 해도 \n끼치지 않습니다.",
+                desc: "고온 화장 후 미세하게\n분골된 유골은 자연 성분(칼슘·인)만\n남아 해양 생태계에 어떠한 해도\n끼치지 않습니다.",
               },
               {
                 label: "영속적",
                 title: "묘지 관리 부담 제로",
-                desc: "묘지 이전, 벌초, 관리비 걱정 없이\n매년 바다를 찾아 자유롭게 \n추모할 수 있어 후손의 부담이 \n완전히 사라집니다.",
+                desc: "묘지 이전, 벌초, 관리비 걱정 없이\n매년 바다를 찾아 자유롭게\n추모할 수 있어 후손의 부담이\n완전히 사라집니다.",
               },
             ].map((item, i) => (
               <FadeInOnScroll key={i} delay={i * 150 + 500}>
-                <div className="flex h-full flex-col rounded-sm border border-soft-gold/10 bg-white/[0.03] p-8">
+                <div className="flex h-full flex-col rounded-sm border border-soft-gold/10 bg-white/[0.03] p-5 md:p-8">
                   <span className="font-sans text-sm font-medium tracking-[0.2em] text-soft-gold">
                     {item.label}
                   </span>
@@ -397,7 +399,9 @@ export default function Home() {
                   <br className="md:hidden" />
                   {" "}시원한 시야는, 고인의 영원한
                   <br className="md:hidden" />
-                  {" "}비상(飛上)을 기원하는 성해원(星海園)만의 독보적인
+                  {" "}비상(飛上)을 기원하는
+                  <br className="md:hidden" />
+                  {" "}성해원(星海園)만의 독보적인
                   <br className="md:hidden" />
                   {" "}산분 포인트입니다.
                 </p>
