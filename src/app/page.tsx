@@ -30,7 +30,7 @@ function FAQItem({ q, a }: { q: string; a: string }) {
           open ? "max-h-96 pb-6" : "max-h-0"
         }`}
       >
-        <p className="font-sans text-lg leading-[1.5] tracking-normal text-white/90">{a}</p>
+        <p className="font-sans text-lg leading-[1.35] tracking-normal text-white/90 md:leading-[1.5]">{a}</p>
       </div>
     </div>
   );
@@ -165,11 +165,13 @@ export default function Home() {
               하늘과 바다가 맞닿은 곳,
               <br />
               <span className="mt-1 block">
-                섬들이 지키는 고인의 <span className="text-soft-gold">영원한 안식처</span>
+                섬들이 지키는 고인의
+                <br className="md:hidden" />
+                {" "}<span className="text-soft-gold">영원한 안식처</span>
               </span>
             </h1>
 
-            <p className="mx-auto mt-5 max-w-xl font-sans text-sm leading-normal tracking-normal text-white/90 md:text-base">
+            <p className="mx-auto mt-5 max-w-xl font-sans text-sm leading-[1.35] tracking-normal text-white/90 md:leading-normal md:text-base">
               고인을 가장 빛나는 별로, 푸른 바다의 품으로 모시는 정직한 길잡이
               <br />
               성해원(星海園)
@@ -217,7 +219,7 @@ export default function Home() {
             </FadeInOnScroll>
 
             <FadeInOnScroll delay={500}>
-              <p className="mt-10 font-serif text-lg font-light leading-[1.5] tracking-normal text-white/90 md:text-xl">
+              <p className="mt-10 font-serif text-lg font-light leading-[1.35] tracking-normal text-white/90 md:leading-[1.5] md:text-xl">
                 오직 한 가족만을 위한 단독선으로
                 <br />
                 온전한 진심을 전하세요.
@@ -257,18 +259,22 @@ export default function Home() {
 
           <FadeInOnScroll delay={400}>
             <div className="mx-auto mt-12 max-w-2xl">
-              <p className="font-serif text-lg font-light leading-[1.5] tracking-normal text-white/90 md:text-xl">
+              <p className="font-serif text-lg font-light leading-[1.35] tracking-normal text-white/90 md:leading-[1.5] md:text-xl">
                 좁은 납골당과 장지의 답답함을 벗어나,
                 <br />
-                본연의 모습 그대로 자유로울 수 있는 곳.
+                본연의 모습 그대로
+                <br className="md:hidden" />
+                {" "}자유로울 수 있는 곳.
               </p>
             </div>
           </FadeInOnScroll>
 
           <FadeInOnScroll delay={600}>
             <div className="mx-auto mt-8 max-w-2xl">
-              <p className="font-serif text-lg font-light leading-[1.5] tracking-normal text-white/90 md:text-xl">
-                나로호의 꿈이 시작되는 낭도 앞바다에서
+              <p className="font-serif text-lg font-light leading-[1.35] tracking-normal text-white/90 md:leading-[1.5] md:text-xl">
+                나로호의 꿈이 시작되는
+                <br className="md:hidden" />
+                {" "}낭도 앞바다에서
                 <br />
                 고인을 가장 빛나는 별로 모십니다.
               </p>
@@ -296,14 +302,14 @@ export default function Home() {
               <p className="font-sans text-lg tracking-normal text-soft-gold/60">
                 「장사 등에 관한 법률」 제2조 제3항
               </p>
-              <p className="mt-4 font-serif text-lg font-light leading-[1.5] tracking-normal text-white/90 md:text-xl">
-                &ldquo;자연장(自然葬)&rdquo;이란 화장한
+              <p className="mt-4 font-serif text-lg font-light leading-[1.35] tracking-normal text-white/90 md:leading-[1.5] md:text-xl">
+                &ldquo;자연장(自然葬)&rdquo;이란 화장한 유골의 골분(骨粉)을
                 <br className="md:hidden" />
-                {" "}유골의 골분(骨粉)을 수목·화초·잔디 등의 밑이나
+                {" "}수목·화초·잔디 등의 밑이나 주변에 묻거나 해양 등
                 <br className="md:hidden" />
-                {" "}주변에 묻거나 해양 등 대통령령으로
+                {" "}대통령령으로 정하는 구역에 뿌려
                 <br className="md:hidden" />
-                {" "}정하는 구역에 뿌려 장사하는 것을 말한다.
+                {" "}장사하는 것을 말한다.
               </p>
             </div>
           </FadeInOnScroll>
@@ -313,17 +319,17 @@ export default function Home() {
               {
                 label: "합법적",
                 title: "법률이 보장하는 자연장",
-                desc: "「장사 등에 관한 법률」 제2조 제3항에 의거, 해안으로부터 5km 이상 떨어진 해역에서 시행하는 합법적인 장례 방식입니다.",
+                desc: "「장사 등에 관한 법률」 \n제2조 제3항에 의거,\n 해안으로부터 5km 이상 떨어진 \n해역에서 시행하는 \n합법적인 장례 방식입니다.",
               },
               {
                 label: "친환경",
                 title: "자연으로 완전한 회귀",
-                desc: "고온 화장 후 미세하게 분골된 유골은 \n자연 성분(칼슘·인)만 남아 해양 생태계에 \n어떠한 해도 끼치지 않습니다.",
+                desc: "고온 화장 후 미세하게 \n분골된 유골은 자연 성분(칼슘·인)만\n 남아 해양 생태계에 어떠한 해도 \n끼치지 않습니다.",
               },
               {
                 label: "영속적",
                 title: "묘지 관리 부담 제로",
-                desc: "묘지 이전, 벌초, 관리비 걱정 없이 \n매년 바다를 찾아 자유롭게 추모할 수 있어 \n후손의 부담이 완전히 사라집니다.",
+                desc: "묘지 이전, 벌초, 관리비 걱정 없이\n매년 바다를 찾아 자유롭게 \n추모할 수 있어 후손의 부담이 \n완전히 사라집니다.",
               },
             ].map((item, i) => (
               <FadeInOnScroll key={i} delay={i * 150 + 500}>
@@ -334,7 +340,7 @@ export default function Home() {
                   <h3 className="mt-3 font-serif text-xl font-medium tracking-normal text-white">
                     {item.title}
                   </h3>
-                  <p className="mt-3 flex-1 whitespace-pre-line font-sans text-lg leading-[1.6] tracking-normal text-white/90 md:whitespace-normal">
+                  <p className="mt-3 flex-1 whitespace-pre-line font-sans text-lg leading-[1.35] tracking-normal text-white/90 md:whitespace-normal md:leading-[1.6]">
                     {item.desc}
                   </p>
                 </div>
@@ -376,21 +382,24 @@ export default function Home() {
               </FadeInOnScroll>
 
               <FadeInOnScroll delay={500}>
-                <p className="mt-8 font-serif text-lg font-light leading-[1.5] tracking-normal text-white/90 md:text-xl">
-                  성해원(星海園)은 해안선 5km 밖, 오염되지 않은
-                  <br />
-                  가장 깊은 남해 먼바다로 향합니다.
+                <p className="mt-8 font-serif text-lg font-light leading-[1.35] tracking-normal text-white/90 md:leading-[1.5] md:text-xl">
+                  성해원(星海園)은 해안선 5km 밖,
+                  <br className="md:hidden" />
+                  {" "}오염되지 않은 가장 깊은
+                  <br className="md:hidden" />
+                  {" "}남해 먼바다로 향합니다.
                 </p>
               </FadeInOnScroll>
 
               <FadeInOnScroll delay={600}>
-                <p className="mt-6 font-serif text-lg font-light leading-[1.5] tracking-normal text-white/90 md:text-xl">
-                  고흥 나로우주센터가 보이는 시원한 시야는,
-                  <br />
-                  고인의 영원한 비상(飛上)을 기원하는
-                  <br />
-                  <span className="md:hidden">성해원(星海園)만의<br />독보적인 산분 포인트입니다.</span>
-                  <span className="hidden md:inline">성해원(星海園)만의 독보적인 산분 포인트입니다.</span>
+                <p className="mt-6 font-serif text-lg font-light leading-[1.35] tracking-normal text-white/90 md:leading-[1.5] md:text-xl">
+                  고흥 나로우주센터가 보이는
+                  <br className="md:hidden" />
+                  {" "}시원한 시야는, 고인의 영원한
+                  <br className="md:hidden" />
+                  {" "}비상(飛上)을 기원하는 성해원(星海園)만의 독보적인
+                  <br className="md:hidden" />
+                  {" "}산분 포인트입니다.
                 </p>
               </FadeInOnScroll>
             </div>
@@ -455,17 +464,17 @@ export default function Home() {
               {
                 time: "STEP 01",
                 title: "추모실 집결 및 안내",
-                desc: "여수 낭도 성해원(星海園) 추모실로 고인을 모시고, \n당일 절차를 안내합니다. (제사는 선택사항)",
+                desc: "여수 낭도 성해원(星海園) \n추모실로 고인을 모시고, \n당일 절차를 안내합니다. \n(제사는 선택사항)",
               },
               {
                 time: "STEP 02",
                 title: "단독 추모선 출항",
-                desc: "오직 고인과 유족분들만 태운 \n단독 추모선이 출항합니다. (최대 16인승)",
+                desc: "오직 고인과 유족분들만 태운\n단독 추모선이 출항합니다.\n (최대 16인승)",
               },
               {
                 time: "STEP 03",
                 title: "해양장지 도착",
-                desc: "해안선 5km 밖 산분 포인트에 도착합니다.",
+                desc: "해안선 5km 밖 \n산분 포인트에 도착합니다.",
               },
               {
                 time: "STEP 04",
@@ -475,7 +484,7 @@ export default function Home() {
               {
                 time: "STEP 05",
                 title: "귀항 및 증명서 발급",
-                desc: "귀항 후 고인을 모신 해양장지의 \nGPS 좌표를 기록한 증명서를 발급합니다.",
+                desc: "귀항 후 고인을 모신 해양장지의\nGPS 좌표를 기록한 \n증명서를 발급합니다.",
               },
             ].map((step, i) => (
               <FadeInOnScroll key={i} delay={i * 100 + 400}>
@@ -487,7 +496,7 @@ export default function Home() {
                     <h3 className="mt-2 font-serif text-lg font-medium tracking-normal text-white md:text-xl">
                       {step.title}
                     </h3>
-                    <p className="mt-2 whitespace-pre-line font-sans text-lg leading-[1.6] tracking-normal text-white/90 md:whitespace-normal">
+                    <p className="mt-2 whitespace-pre-line font-sans text-lg leading-[1.35] tracking-normal text-white/90 md:whitespace-normal md:leading-[1.6]">
                       {step.desc}
                     </p>
                   </div>
@@ -521,21 +530,23 @@ export default function Home() {
 
           <FadeInOnScroll delay={400}>
             <div className="mx-auto mt-16 max-w-3xl text-center">
-              <p className="font-serif text-lg font-light leading-[1.5] tracking-normal text-white/90 md:text-xl">
-                성해원은 추모 대기실이 따로 마련되어 있어
+              <p className="font-serif text-lg font-light leading-[1.35] tracking-normal text-white/90 md:leading-[1.5] md:text-xl">
+                성해원은 추모 대기실이
+                <br className="md:hidden" />
+                {" "}따로 마련되어 있어
                 <br />
                 배 위에서 제사를 지내는 것이 아닌
                 <br />
                 추모실에서 안전하고 편안하게
-                <br className="md:hidden" />
-                {" "}제사를 지낼 수 있습니다.
+                <br />
+                제사를 지낼 수 있습니다.
               </p>
             </div>
           </FadeInOnScroll>
 
           <FadeInOnScroll delay={500}>
             <div className="mx-auto mt-10 max-w-3xl text-center">
-              <p className="font-serif text-lg font-light leading-[1.5] tracking-normal text-white/90 md:text-xl">
+              <p className="font-serif text-lg font-light leading-[1.35] tracking-normal text-white/90 md:leading-[1.5] md:text-xl">
                 고령이시거나 배멀미가 심하신 분,
                 <br />
                 꼭 함께 승선하지 않아도 되는 분들은
@@ -617,7 +628,7 @@ export default function Home() {
               <span className="md:hidden">고인을 추모하는 일에만<br />집중할 수 있도록,</span>
               <span className="hidden md:inline">고인을 추모하는 일에만 집중할 수 있도록,</span>
               <br />
-              <span className="md:hidden">복잡한 절차와 준비는<br /><span className="text-soft-gold">성해원(星海園)이 모두 다 하겠습니다.</span></span>
+              <span className="md:hidden">복잡한 절차와 준비는<br /><span className="text-soft-gold">성해원(星海園)이<br />모두 다 하겠습니다.</span></span>
               <span className="hidden md:inline">복잡한 절차와 준비는 <span className="text-soft-gold">성해원(星海園)이 모두 다 하겠습니다.</span></span>
             </h2>
           </FadeInOnScroll>
@@ -627,15 +638,17 @@ export default function Home() {
           </FadeInOnScroll>
 
           <FadeInOnScroll delay={500}>
-            <p className="mx-auto mt-10 max-w-2xl font-serif text-lg font-light leading-[1.5] tracking-normal text-white/90 md:text-xl">
-              성해원(星海園)은 대표가 직접 상담을 진행합니다.
+            <p className="mx-auto mt-10 max-w-2xl font-serif text-lg font-light leading-[1.35] tracking-normal text-white/90 md:leading-[1.5] md:text-xl">
+              성해원(星海園)은 대표가
+              <br className="md:hidden" />
+              {" "}직접 상담을 진행합니다.
               <br />
               한 통의 전화면 충분합니다.
             </p>
           </FadeInOnScroll>
 
           <FadeInOnScroll delay={600}>
-            <p className="mx-auto mt-6 max-w-2xl font-serif text-lg font-light leading-[1.5] tracking-normal text-white/90 md:text-xl">
+            <p className="mx-auto mt-6 max-w-2xl font-serif text-lg font-light leading-[1.35] tracking-normal text-white/90 md:leading-[1.5] md:text-xl">
               가족의 마음으로 깊이 공감하되,
               <br />
               <span className="md:hidden">전문가의 시선으로 모든 과정을<br />빈틈없이 챙기겠습니다.</span>
@@ -668,7 +681,9 @@ export default function Home() {
                   성해원(星海園)
                 </p>
                 <p className="mt-2 font-sans text-lg tracking-normal text-white/90">
-                  별을 품은 바다정원의 안식처 · 프라이빗 해상 추모 · 해양장 전문
+                  별을 품은 바다정원의 안식처
+                  <br className="md:hidden" />
+                  {" "}프라이빗 해상 추모 · 해양장 전문
                 </p>
               </div>
             </div>
@@ -691,7 +706,9 @@ export default function Home() {
               <div>
                 <p className="font-sans text-sm tracking-normal text-soft-gold/40">사업장 주소</p>
                 <p className="mt-0.5 font-sans text-lg leading-snug text-white/90">
-                  광주광역시 북구 서하로 463, 2층 B24호(각화동)
+                  광주광역시 북구 서하로 463,
+                  <br className="md:hidden" />
+                  {" "}2층 B24호(각화동)
                 </p>
               </div>
             </div>
