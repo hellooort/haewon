@@ -10,6 +10,7 @@ const notoSerifKR = Noto_Serif_KR({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.seonghaewon.co.kr"),
   title: "성해원(星海園) | 별을 품은 바다정원의 안식처 · 해양장",
   description:
     "하늘과 바다가 맞닿은 곳, 섬들이 지키는 고인의 영원한 안식처. 나로호의 꿈이 시작되는 낭도 앞바다, 프라이빗 해양장 전문 — 성해원",
@@ -18,6 +19,12 @@ export const metadata: Metadata = {
     title: "성해원(星海園) | 별을 품은 바다정원의 안식처",
     description: "하늘과 바다가 맞닿은 곳, 섬들이 지키는 고인의 영원한 안식처",
     type: "website",
+  },
+  verification: {
+    google: "bjBON4aJOCJLUaUBOwkAjkV-WjvJwnZ0XE5V5y6Z0TI",
+    other: {
+      "naver-site-verification": "ac02c7a38c62ddc72499c42515bb3c1ca9dc352c",
+    },
   },
 };
 
