@@ -136,17 +136,21 @@ export default function Home() {
           <iframe
             src="https://www.youtube.com/embed/Jq5iJ5QMhUU?autoplay=1&mute=1&loop=1&playlist=Jq5iJ5QMhUU&controls=0&showinfo=0&modestbranding=1&rel=0&playsinline=1&enablejsapi=1"
             title="성해원(星海園) 영상"
-            className="pointer-events-none absolute inset-0 h-full w-full border-0 object-cover md:inset-auto md:left-1/2 md:top-1/2 md:h-auto md:w-auto md:-translate-x-1/2 md:-translate-y-1/2"
-            style={{
-              minWidth: "100%",
-              minHeight: "100%",
-            }}
+            className="pointer-events-none absolute left-0 border-0"
             allow="autoplay; encrypted-media"
             allowFullScreen
           />
           <style jsx>{`
+            iframe[title="성해원(星海園) 영상"] {
+              top: 20%;
+              width: 100%;
+              height: 56.25vw;
+            }
             @media (min-width: 768px) {
               iframe[title="성해원(星海園) 영상"] {
+                top: 50% !important;
+                left: 50% !important;
+                transform: translate(-50%, -50%) !important;
                 width: max(100vw, 177.78vh) !important;
                 height: max(100vh, 56.25vw) !important;
               }
@@ -290,7 +294,7 @@ export default function Home() {
         <div className="mx-auto max-w-6xl px-6 py-24 md:px-12 md:py-36">
           <FadeInOnScroll delay={200}>
             <h2 className="text-center font-serif text-3xl font-light leading-snug tracking-normal text-white md:text-4xl lg:text-5xl">
-              법률이 보장하는{" "}
+              법률이 보장하는{" "}<br className="md:hidden" />
               <span className="text-soft-gold">자연장</span>
             </h2>
           </FadeInOnScroll>
@@ -305,12 +309,12 @@ export default function Home() {
                 「장사 등에 관한 법률」 제2조 제3항
               </p>
               <p className="mt-4 font-serif text-lg font-light leading-[1.35] tracking-normal text-white/90 md:leading-[1.5] md:text-xl">
-                &ldquo;자연장(自然葬)&rdquo;이란 화장한 유골의 골분(骨粉)을
+                &ldquo;자연장(自然葬)&rdquo;이란 <br className="md:hidden" />화장한 유골의 골분(骨粉)을
                 <br className="md:hidden" />
-                {" "}수목·화초·잔디 등의 밑이나 주변에 묻거나 해양 등
+                {" "}수목·화초·잔디 등의 밑이나 <br className="md:hidden" />주변에 묻거나 해양 등
                 <br className="md:hidden" />
-                {" "}대통령령으로 정하는 구역에 뿌려
-                <br className="md:hidden" />
+                {" "}대통령령으로 정하는 구역에 <br className="md:hidden" />뿌려
+       
                 {" "}장사하는 것을 말한다.
               </p>
             </div>
@@ -336,7 +340,7 @@ export default function Home() {
             ].map((item, i) => (
               <FadeInOnScroll key={i} delay={i * 150 + 500}>
                 <div className="flex h-full flex-col rounded-sm border border-soft-gold/10 bg-white/[0.03] p-5 md:p-8">
-                  <span className="font-sans text-sm font-medium tracking-[0.2em] text-soft-gold">
+                  <span className="font-sans text-sm font-medium tracking-[0.05em] text-soft-gold">
                     {item.label}
                   </span>
                   <h3 className="mt-3 font-serif text-xl font-medium tracking-normal text-white">
@@ -523,7 +527,7 @@ export default function Home() {
               <h2 className="mt-6 font-serif text-3xl font-light leading-snug tracking-normal text-white md:text-5xl lg:text-6xl">
                 추모대기실에서
                 <br />
-                <span className="text-soft-gold">편안하게 기다리실 수 있습니다</span>
+                <span className="text-soft-gold">편안하게 <br className="md:hidden" />기다리실 수 있습니다</span>
               </h2>
             </FadeInOnScroll>
 
